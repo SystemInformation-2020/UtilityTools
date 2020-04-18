@@ -67,8 +67,7 @@ namespace UtilityTools
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
-            f2.Closed += (s, args) => this.Close();
+            Modal.FormRegister f2 = new Modal.FormRegister();
             f2.Show();
         }
     }
