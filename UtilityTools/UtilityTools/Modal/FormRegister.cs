@@ -16,5 +16,32 @@ namespace UtilityTools.Modal
         {
             InitializeComponent();
         }
+
+        private void FormRegister_Load(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.FromArgb(100,0,0,0);
+            panel2.BackColor = Color.FromArgb(100, 0, 0, 3);
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String mensagem = "";
+            mensagem += "Nome: " + txtName.Text + "\n";
+            mensagem += "CPF: " + maskedTextBox1.Text + "\n";
+            mensagem += "Email: " + txtEmail.Text + "\n";
+            mensagem += "Password: " + txtPassword.Text + "\n";
+            mensagem += "C.Password: " + txtCpassword.Text + "\n";
+            MessageBox.Show(mensagem);
+        }
     }
 }

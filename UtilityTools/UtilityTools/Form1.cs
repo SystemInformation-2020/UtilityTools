@@ -70,5 +70,11 @@ namespace UtilityTools
             Modal.FormRegister f2 = new Modal.FormRegister();
             f2.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }
