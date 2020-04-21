@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegister));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.chkTermos = new System.Windows.Forms.CheckBox();
+            this.mtxtcpf = new System.Windows.Forms.MaskedTextBox();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.txtCpassword = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -43,9 +43,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnInicial = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,9 +53,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.maskedTextBox1);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.chkTermos);
+            this.panel1.Controls.Add(this.mtxtcpf);
+            this.panel1.Controls.Add(this.btnRegister);
             this.panel1.Controls.Add(this.txtCpassword);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtEmail);
@@ -71,41 +71,41 @@
             this.panel1.Size = new System.Drawing.Size(301, 358);
             this.panel1.TabIndex = 0;
             // 
-            // checkBox1
+            // chkTermos
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.checkBox1.Location = new System.Drawing.Point(65, 272);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(164, 19);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "Eu aceito  os termos e condições";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkTermos.AutoSize = true;
+            this.chkTermos.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTermos.ForeColor = System.Drawing.Color.White;
+            this.chkTermos.Location = new System.Drawing.Point(68, 272);
+            this.chkTermos.Name = "chkTermos";
+            this.chkTermos.Size = new System.Drawing.Size(164, 19);
+            this.chkTermos.TabIndex = 15;
+            this.chkTermos.Text = "Eu aceito  os termos e condições";
+            this.chkTermos.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // mtxtcpf
             // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Location = new System.Drawing.Point(65, 126);
-            this.maskedTextBox1.Mask = "000.000.000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(183, 20);
-            this.maskedTextBox1.TabIndex = 14;
+            this.mtxtcpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mtxtcpf.Location = new System.Drawing.Point(65, 126);
+            this.mtxtcpf.Mask = "000.000.000-00";
+            this.mtxtcpf.Name = "mtxtcpf";
+            this.mtxtcpf.Size = new System.Drawing.Size(183, 20);
+            this.mtxtcpf.TabIndex = 14;
             // 
-            // button2
+            // btnRegister
             // 
-            this.button2.BackColor = System.Drawing.Color.Aqua;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(108, 306);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRegister.BackColor = System.Drawing.Color.Aqua;
+            this.btnRegister.FlatAppearance.BorderSize = 0;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.ForeColor = System.Drawing.Color.Black;
+            this.btnRegister.Location = new System.Drawing.Point(121, 304);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(75, 33);
+            this.btnRegister.TabIndex = 11;
+            this.btnRegister.Text = "Registrar";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // txtCpassword
             // 
@@ -209,51 +209,53 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("College", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Aqua;
-            this.label1.Location = new System.Drawing.Point(104, 34);
+            this.label1.Location = new System.Drawing.Point(108, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 21);
+            this.label1.Size = new System.Drawing.Size(100, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Register";
             // 
-            // button1
+            // btnExit
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(615, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 35);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Red;
+            this.btnExit.Location = new System.Drawing.Point(612, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(40, 35);
+            this.btnExit.TabIndex = 13;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btnInicial);
+            this.panel2.Controls.Add(this.btnExit);
             this.panel2.Location = new System.Drawing.Point(1, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(613, 41);
+            this.panel2.Size = new System.Drawing.Size(652, 41);
             this.panel2.TabIndex = 14;
             // 
-            // button3
+            // btnInicial
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(3, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 30);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Página Inicial";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnInicial.BackColor = System.Drawing.Color.Transparent;
+            this.btnInicial.FlatAppearance.BorderSize = 0;
+            this.btnInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicial.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicial.ForeColor = System.Drawing.Color.Transparent;
+            this.btnInicial.Location = new System.Drawing.Point(3, 5);
+            this.btnInicial.Name = "btnInicial";
+            this.btnInicial.Size = new System.Drawing.Size(127, 30);
+            this.btnInicial.TabIndex = 0;
+            this.btnInicial.Text = "Página Inicial";
+            this.btnInicial.UseVisualStyleBackColor = false;
+            this.btnInicial.Visible = false;
             // 
             // FormRegister
             // 
@@ -262,7 +264,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(653, 468);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormRegister";
@@ -285,15 +286,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtCpassword;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.MaskedTextBox mtxtcpf;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.CheckBox chkTermos;
+        private System.Windows.Forms.Button btnInicial;
     }
 }

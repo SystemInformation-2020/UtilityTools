@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnLogin = new System.Windows.Forms.Button();
-            this.txt1 = new System.Windows.Forms.TextBox();
-            this.txt2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,7 +40,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkRemember = new System.Windows.Forms.CheckBox();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,29 +59,29 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(168, 47);
             this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "Connect";
+            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // txt1
+            // txtEmail
             // 
-            this.txt1.BackColor = System.Drawing.Color.White;
-            this.txt1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(485, 147);
-            this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(222, 15);
-            this.txt1.TabIndex = 1;
+            this.txtEmail.BackColor = System.Drawing.Color.White;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(485, 147);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(222, 15);
+            this.txtEmail.TabIndex = 1;
             // 
-            // txt2
+            // txtPassword
             // 
-            this.txt2.BackColor = System.Drawing.Color.White;
-            this.txt2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt2.Location = new System.Drawing.Point(485, 209);
-            this.txt2.Name = "txt2";
-            this.txt2.PasswordChar = '*';
-            this.txt2.Size = new System.Drawing.Size(222, 13);
-            this.txt2.TabIndex = 2;
+            this.txtPassword.BackColor = System.Drawing.Color.White;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Location = new System.Drawing.Point(485, 209);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(222, 13);
+            this.txtPassword.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -127,7 +127,6 @@
             this.label2.Size = new System.Drawing.Size(68, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "Password:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox2
             // 
@@ -153,7 +152,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Gray;
+            this.linkLabel1.LinkColor = System.Drawing.SystemColors.HotTrack;
             this.linkLabel1.Location = new System.Drawing.Point(608, 240);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(99, 14);
@@ -161,23 +160,23 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot Password ?";
             // 
-            // checkBox1
+            // chkRemember
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Gray;
-            this.checkBox1.Location = new System.Drawing.Point(448, 239);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(99, 18);
-            this.checkBox1.TabIndex = 14;
-            this.checkBox1.Text = "Remember me";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkRemember.AutoSize = true;
+            this.chkRemember.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRemember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chkRemember.Location = new System.Drawing.Point(448, 239);
+            this.chkRemember.Name = "chkRemember";
+            this.chkRemember.Size = new System.Drawing.Size(99, 18);
+            this.chkRemember.TabIndex = 14;
+            this.chkRemember.Text = "Remember me";
+            this.chkRemember.UseVisualStyleBackColor = true;
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel2.LinkColor = System.Drawing.SystemColors.HotTrack;
             this.linkLabel2.Location = new System.Drawing.Point(620, 347);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(49, 14);
@@ -189,10 +188,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(727, -1);
+            this.button1.Location = new System.Drawing.Point(723, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 35);
             this.button1.TabIndex = 16;
@@ -208,7 +208,7 @@
             this.ClientSize = new System.Drawing.Size(763, 396);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkRemember);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -217,8 +217,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txt2);
-            this.Controls.Add(this.txt1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -236,9 +236,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox txt2;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txt1;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
@@ -246,7 +246,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkRemember;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button button1;
     }
