@@ -35,9 +35,11 @@ namespace UtilityTools.Modal
 
         private void rbtnLocal_CheckedChanged(object sender, EventArgs e)
         {
-            if(this.rbtnLocal.Checked)
+            if (this.rbtnLocal.Checked)
             {
                 btnArquivoUp.Enabled = true;
+
+                btnCarregarCarro.Enabled = true;
             }
             else
             {
@@ -49,7 +51,7 @@ namespace UtilityTools.Modal
         {
             OpenFileDialog arquivoup = new OpenFileDialog();
 
-            if(arquivoup.ShowDialog() == DialogResult.OK)
+            if (arquivoup.ShowDialog() == DialogResult.OK)
             {
                 // StreamReader readarq = new StreamReader(arquivoup.FileName, Encoding.Default);
                 // readarq.Close();
@@ -69,9 +71,93 @@ namespace UtilityTools.Modal
             algorithm.setOptions(timeout: 300); // optional
             var response = algorithm.pipe<object>(input);
 
+            var resultado = algorithm.pipe<object>(input);
+
             Console.WriteLine(response.result);
 
-            //txtOutCarro.Text = ;
+            Console.WriteLine("----------");
+
+            
+
+            //txtOutCarro.Text = response.result.ToString();
+
+
+            txtOutCarro.Text = resultado.result.ToString();
+
+            pbCarroOut.ImageLocation = txtEnderecoCarro.Text;
+
+
+            pbCarroOut.BackgroundImageLayout = ImageLayout.Stretch;
+
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("[", "");
+            txtOutCarro.Text = txtOutCarro.Text.Replace("]", "");
+
+            //txtOutCarro.Text = txtOutCarro.Text.Replace("{", "");//NAO CONTEM*
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("},", "\n----------");
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("\"", "");
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("{", "");
+
+            //PALAVRAS
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("body_style:", "Estilo de Corpo:");
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("confidence:", "Chance (%*100):");
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("make:", "Marca:");
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("model:", "Modelo:");
+
+            txtOutCarro.Text = txtOutCarro.Text.Replace("model_year:", "Ano:");
+
+
+        }
+
+        private void rbtnLink_CheckedChanged(object sender, EventArgs e)
+        {
+            if(this.rbtnLink.Checked)
+            {
+                btnCarregarCarro.Enabled = true;
+            }
+        }
+
+        private void btnGoImageColor_Click(object sender, EventArgs e)
+        {
+            var input = txtEnderecoImagemColor.Text ;
+
+
+            var client = new Client("simGui+0ItIawILfndtvMe8Bbsd1");
+            var algorithm = client.algo("deeplearning/ColorfulImageColorization/1.1.13");
+
+
+            algorithm.setOptions(timeout: 300); // optional
+            var response = algorithm.pipeJson<object>(input);
+            
+            
+            Console.WriteLine(response.result);// RESULTADO
+
+
+
+            //pboxImagemColor.ImageLocation = txtEnderecoCarro.Text;
+
+
+
+        }
+
+        private void rbtnLinkColor_CheckedChanged(object sender, EventArgs e)
+        {
+            if(this.rbtnLinkColor.Checked)
+            {
+                btnGoImageColor.Enabled = true;
+            }
+        }
+
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(4);
         }
     }
 }
