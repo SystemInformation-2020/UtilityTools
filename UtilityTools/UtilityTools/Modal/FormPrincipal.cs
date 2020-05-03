@@ -22,10 +22,12 @@ namespace UtilityTools.Modal
             InitializeComponent();
         }
 
+
         MySqlConnection con = new MySqlConnection();
 
         MySqlConnection objCon = new MySqlConnection("server=localhost; port=3309; User Id=root; database=utilitysi; password=usbw");
 
+        public double numb1, numb2, total;
 
 
         private void FormPrincipal_Load(object sender, EventArgs e)
@@ -158,6 +160,150 @@ namespace UtilityTools.Modal
         private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(4);
+        }
+
+        private void btnQRGerar_Click(object sender, EventArgs e)
+        {
+            if (txtTextoQR.Text == string.Empty || txtLarguraQR.Text == string.Empty && txtAlturaQR.Text == string.Empty)
+            {
+                MessageBox.Show("Informações inválidas. Complete as informações para gerar o QRCode...");
+                txtTextoQR.Focus();
+                return;
+            }
+
+            try
+            {
+                int largura = Convert.ToInt32(txtLarguraQR.Text);
+                int altura = Convert.ToInt32(txtAlturaQR.Text);
+                picQRCode.Image = GerarQRCode(largura, altura, txtTextoQR.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Eroo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private static Bitmap GerarQRCode(int width, int height, string text)
+        {
+            try
+            {
+                var bw = new ZXing.BarcodeWriter();
+                var encOptions = new ZXing.Common.EncodingOptions()
+                {
+                    Width = width,
+                    Height = height,
+                    Margin = 0
+                };
+                bw.Options = encOptions;
+                bw.Format = ZXing.BarcodeFormat.QR_CODE;
+                var resultado = new Bitmap(bw.Write(text));
+                return resultado;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        private void txtTextoQR_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtTextoQR.Text))
+            {
+                btnQRGerar.Enabled = true;
+            }
+        }
+
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "0";
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "1";
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "2";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "3";
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "4";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "5";
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "6";
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "7";
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "8";
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + "9";
+        }
+
+
+        private void btnVirgula_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = txtValor.Text + ",";
+        }
+
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+
+            //lblConta.Text = lblConta.Text + btnResult.Text;
+            //numb2 = Convert.ToDouble(txtValor.Text);
+
+
+
+            txtValor.Text = "";
+
+            total = numb1 / numb2;
+            txtValor.Text = total.ToString();
+            total = numb1 % numb2;
+
+            txtRest.Text = "Resto: " + total.ToString();
+        }
+
+        private void btnDiv_Click(object sender, EventArgs e)
+        {
+            numb1 = Convert.ToDouble(txtValor.Text);
+            //lblConta.Text = Convert.ToString(numb1) + "/";
+
+
+            txtValor.Text += txtRest.Text;
+
+            txtRest.Text = "";
+
+        }
+
+        private void btnAC_Click(object sender, EventArgs e)
+        {
+            txtValor.Text = "";
+            lblConta.Text = "";
+            txtRest.Text = "";
         }
     }
 }
