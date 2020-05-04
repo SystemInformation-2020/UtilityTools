@@ -128,6 +128,7 @@ namespace UtilityTools.Modal
 
         private void btnGoImageColor_Click(object sender, EventArgs e)
         {
+            pboxImagemColor.BackgroundImage = null;
             var input = txtEnderecoImagemColor.Text ;
 
 
@@ -285,6 +286,16 @@ namespace UtilityTools.Modal
             total = numb1 % numb2;
 
             txtRest.Text = "Resto: " + total.ToString();
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void btnDiv_Click(object sender, EventArgs e)

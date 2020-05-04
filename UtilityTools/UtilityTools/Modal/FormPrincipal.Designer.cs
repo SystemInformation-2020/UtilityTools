@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -109,36 +110,39 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(804, 617);
+            this.tabControl1.Size = new System.Drawing.Size(955, 617);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(796, 591);
+            this.tabPage1.Size = new System.Drawing.Size(947, 591);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Principal";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(211, 118);
+            this.textBox1.Location = new System.Drawing.Point(297, 128);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(368, 271);
+            this.textBox1.Size = new System.Drawing.Size(368, 380);
             this.textBox1.TabIndex = 2;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Lucida Sans Unicode", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(293, 60);
+            this.label6.Location = new System.Drawing.Point(379, 65);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(202, 39);
             this.label6.TabIndex = 0;
@@ -146,7 +150,9 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.btnCarregarCarro);
             this.tabPage2.Controls.Add(this.label2);
@@ -163,20 +169,21 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(280, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(267, 18);
+            this.label3.Size = new System.Drawing.Size(299, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "O Processo Pode Demorar Um Pouco";
             // 
             // btnCarregarCarro
             // 
-            this.btnCarregarCarro.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnCarregarCarro.BackColor = System.Drawing.Color.Transparent;
             this.btnCarregarCarro.Enabled = false;
             this.btnCarregarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarregarCarro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarregarCarro.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarregarCarro.ForeColor = System.Drawing.Color.White;
             this.btnCarregarCarro.Location = new System.Drawing.Point(359, 197);
             this.btnCarregarCarro.Name = "btnCarregarCarro";
@@ -189,11 +196,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(8, 270);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 18);
+            this.label2.Size = new System.Drawing.Size(124, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Dados (Output): ";
             // 
@@ -209,6 +217,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.btnArquivoUp);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtEnderecoCarro);
@@ -238,11 +247,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(147, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 18);
+            this.label1.Size = new System.Drawing.Size(160, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Endereço da Imagem:";
             // 
@@ -284,6 +293,7 @@
             // 
             // pbCarroOut
             // 
+            this.pbCarroOut.BackColor = System.Drawing.Color.Transparent;
             this.pbCarroOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbCarroOut.Location = new System.Drawing.Point(411, 291);
             this.pbCarroOut.Name = "pbCarroOut";
@@ -294,7 +304,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(796, 591);
@@ -304,6 +314,8 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.SystemColors.Highlight;
+            this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
+            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage4.Controls.Add(this.btnGoImageColor);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Controls.Add(this.groupBox2);
@@ -316,7 +328,7 @@
             // 
             // btnGoImageColor
             // 
-            this.btnGoImageColor.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnGoImageColor.BackColor = System.Drawing.Color.Transparent;
             this.btnGoImageColor.Enabled = false;
             this.btnGoImageColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGoImageColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -332,16 +344,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(258, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(267, 18);
+            this.label4.Size = new System.Drawing.Size(296, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "O Processo Pode Demorar Um Pouco";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.btnUpImgColor);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtEnderecoImagemColor);
@@ -356,10 +370,12 @@
             // btnUpImgColor
             // 
             this.btnUpImgColor.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnUpImgColor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUpImgColor.Enabled = false;
-            this.btnUpImgColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpImgColor.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnUpImgColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpImgColor.ForeColor = System.Drawing.Color.White;
+            this.btnUpImgColor.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnUpImgColor.Location = new System.Drawing.Point(401, 36);
             this.btnUpImgColor.Name = "btnUpImgColor";
             this.btnUpImgColor.Size = new System.Drawing.Size(40, 35);
@@ -370,11 +386,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(147, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 18);
+            this.label5.Size = new System.Drawing.Size(172, 18);
             this.label5.TabIndex = 2;
             this.label5.Text = "Endereço da Imagem:";
             // 
@@ -389,11 +405,11 @@
             // rbtnLinkColor
             // 
             this.rbtnLinkColor.AutoSize = true;
-            this.rbtnLinkColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnLinkColor.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnLinkColor.ForeColor = System.Drawing.Color.White;
             this.rbtnLinkColor.Location = new System.Drawing.Point(74, 83);
             this.rbtnLinkColor.Name = "rbtnLinkColor";
-            this.rbtnLinkColor.Size = new System.Drawing.Size(103, 19);
+            this.rbtnLinkColor.Size = new System.Drawing.Size(116, 20);
             this.rbtnLinkColor.TabIndex = 0;
             this.rbtnLinkColor.TabStop = true;
             this.rbtnLinkColor.Text = "Link (Website)";
@@ -403,11 +419,11 @@
             // rbtnUpImgColor
             // 
             this.rbtnUpImgColor.AutoSize = true;
-            this.rbtnUpImgColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnUpImgColor.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnUpImgColor.ForeColor = System.Drawing.Color.White;
             this.rbtnUpImgColor.Location = new System.Drawing.Point(240, 83);
             this.rbtnUpImgColor.Name = "rbtnUpImgColor";
-            this.rbtnUpImgColor.Size = new System.Drawing.Size(131, 19);
+            this.rbtnUpImgColor.Size = new System.Drawing.Size(147, 20);
             this.rbtnUpImgColor.TabIndex = 0;
             this.rbtnUpImgColor.TabStop = true;
             this.rbtnUpImgColor.Text = "Upload de Imagem";
@@ -415,6 +431,7 @@
             // 
             // pboxImagemColor
             // 
+            this.pboxImagemColor.BackColor = System.Drawing.Color.Transparent;
             this.pboxImagemColor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pboxImagemColor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pboxImagemColor.Location = new System.Drawing.Point(0, 222);
@@ -427,6 +444,8 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.SystemColors.Highlight;
+            this.tabPage5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage5.BackgroundImage")));
+            this.tabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage5.Controls.Add(this.groupBox3);
             this.tabPage5.Controls.Add(this.btnQRGerar);
             this.tabPage5.Controls.Add(this.picQRCode);
@@ -438,6 +457,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.txtTextoQR);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label10);
@@ -449,6 +469,7 @@
             this.groupBox3.Size = new System.Drawing.Size(450, 143);
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // txtTextoQR
             // 
@@ -462,28 +483,28 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(313, 78);
+            this.label7.Location = new System.Drawing.Point(309, 80);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 18);
+            this.label7.Size = new System.Drawing.Size(61, 16);
             this.label7.TabIndex = 22;
             this.label7.Text = "Largura";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(148, 18);
+            this.label10.Location = new System.Drawing.Point(136, 15);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(127, 18);
+            this.label10.Size = new System.Drawing.Size(173, 22);
             this.label10.TabIndex = 17;
             this.label10.Text = "Informe Um Texto";
             // 
             // txtLarguraQR
             // 
-            this.txtLarguraQR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLarguraQR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLarguraQR.Location = new System.Drawing.Point(278, 99);
             this.txtLarguraQR.Name = "txtLarguraQR";
             this.txtLarguraQR.Size = new System.Drawing.Size(128, 24);
@@ -493,7 +514,7 @@
             // 
             // txtAlturaQR
             // 
-            this.txtAlturaQR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlturaQR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlturaQR.Location = new System.Drawing.Point(17, 99);
             this.txtAlturaQR.Name = "txtAlturaQR";
             this.txtAlturaQR.Size = new System.Drawing.Size(128, 24);
@@ -504,22 +525,22 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(59, 78);
+            this.label8.Location = new System.Drawing.Point(55, 80);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 18);
+            this.label8.Size = new System.Drawing.Size(48, 16);
             this.label8.TabIndex = 20;
             this.label8.Text = "Altura";
             // 
             // btnQRGerar
             // 
-            this.btnQRGerar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnQRGerar.BackColor = System.Drawing.Color.Transparent;
             this.btnQRGerar.Enabled = false;
             this.btnQRGerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQRGerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQRGerar.ForeColor = System.Drawing.Color.White;
-            this.btnQRGerar.Location = new System.Drawing.Point(293, 162);
+            this.btnQRGerar.Location = new System.Drawing.Point(306, 166);
             this.btnQRGerar.Name = "btnQRGerar";
             this.btnQRGerar.Size = new System.Drawing.Size(196, 44);
             this.btnQRGerar.TabIndex = 18;
@@ -540,7 +561,7 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.BackColor = System.Drawing.SystemColors.Highlight;
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPage6.Controls.Add(this.btnVirgula);
             this.tabPage6.Controls.Add(this.lblConta);
             this.tabPage6.Controls.Add(this.btnDiv);
@@ -558,21 +579,25 @@
             this.tabPage6.Controls.Add(this.btn9);
             this.tabPage6.Controls.Add(this.txtRest);
             this.tabPage6.Controls.Add(this.txtValor);
+            this.tabPage6.ForeColor = System.Drawing.Color.Aqua;
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(796, 591);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Resto Divisão";
+            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
             // btnVirgula
             // 
-            this.btnVirgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic);
-            this.btnVirgula.Location = new System.Drawing.Point(341, 386);
+            this.btnVirgula.BackColor = System.Drawing.Color.Transparent;
+            this.btnVirgula.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVirgula.ForeColor = System.Drawing.Color.Navy;
+            this.btnVirgula.Location = new System.Drawing.Point(341, 431);
             this.btnVirgula.Name = "btnVirgula";
-            this.btnVirgula.Size = new System.Drawing.Size(69, 34);
+            this.btnVirgula.Size = new System.Drawing.Size(69, 57);
             this.btnVirgula.TabIndex = 27;
             this.btnVirgula.Text = ",";
-            this.btnVirgula.UseVisualStyleBackColor = true;
+            this.btnVirgula.UseVisualStyleBackColor = false;
             this.btnVirgula.Click += new System.EventHandler(this.btnVirgula_Click);
             // 
             // lblConta
@@ -580,7 +605,7 @@
             this.lblConta.AutoSize = true;
             this.lblConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConta.ForeColor = System.Drawing.Color.White;
-            this.lblConta.Location = new System.Drawing.Point(366, 92);
+            this.lblConta.Location = new System.Drawing.Point(363, 104);
             this.lblConta.Name = "lblConta";
             this.lblConta.Size = new System.Drawing.Size(47, 18);
             this.lblConta.TabIndex = 26;
@@ -588,10 +613,11 @@
             // 
             // btnDiv
             // 
-            this.btnDiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiv.Location = new System.Drawing.Point(505, 206);
+            this.btnDiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiv.ForeColor = System.Drawing.Color.Black;
+            this.btnDiv.Location = new System.Drawing.Point(491, 234);
             this.btnDiv.Name = "btnDiv";
-            this.btnDiv.Size = new System.Drawing.Size(31, 97);
+            this.btnDiv.Size = new System.Drawing.Size(31, 129);
             this.btnDiv.TabIndex = 25;
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
@@ -599,21 +625,24 @@
             // 
             // btn0
             // 
-            this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(248, 386);
+            this.btn0.BackColor = System.Drawing.Color.Transparent;
+            this.btn0.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn0.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn0.Location = new System.Drawing.Point(266, 431);
             this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(69, 34);
+            this.btn0.Size = new System.Drawing.Size(69, 57);
             this.btn0.TabIndex = 23;
             this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.UseVisualStyleBackColor = false;
             this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnAC
             // 
-            this.btnAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAC.Location = new System.Drawing.Point(505, 330);
+            this.btnAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAC.ForeColor = System.Drawing.Color.Crimson;
+            this.btnAC.Location = new System.Drawing.Point(491, 368);
             this.btnAC.Name = "btnAC";
-            this.btnAC.Size = new System.Drawing.Size(31, 90);
+            this.btnAC.Size = new System.Drawing.Size(31, 120);
             this.btnAC.TabIndex = 22;
             this.btnAC.Text = "AC";
             this.btnAC.UseVisualStyleBackColor = true;
@@ -622,9 +651,10 @@
             // btnResult
             // 
             this.btnResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResult.Location = new System.Drawing.Point(430, 386);
+            this.btnResult.ForeColor = System.Drawing.Color.Crimson;
+            this.btnResult.Location = new System.Drawing.Point(416, 431);
             this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(69, 34);
+            this.btnResult.Size = new System.Drawing.Size(69, 57);
             this.btnResult.TabIndex = 21;
             this.btnResult.Text = "=";
             this.btnResult.UseVisualStyleBackColor = true;
@@ -632,120 +662,138 @@
             // 
             // btn6
             // 
-            this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(430, 269);
+            this.btn6.BackColor = System.Drawing.Color.Transparent;
+            this.btn6.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn6.Location = new System.Drawing.Point(416, 302);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(69, 34);
+            this.btn6.Size = new System.Drawing.Size(69, 61);
             this.btn6.TabIndex = 20;
             this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn7
             // 
-            this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(247, 330);
+            this.btn7.BackColor = System.Drawing.Color.Transparent;
+            this.btn7.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn7.Location = new System.Drawing.Point(266, 368);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(69, 34);
+            this.btn7.Size = new System.Drawing.Size(69, 57);
             this.btn7.TabIndex = 24;
             this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn5
             // 
-            this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(341, 269);
+            this.btn5.BackColor = System.Drawing.Color.Transparent;
+            this.btn5.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn5.Location = new System.Drawing.Point(341, 300);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(69, 34);
+            this.btn5.Size = new System.Drawing.Size(69, 62);
             this.btn5.TabIndex = 19;
             this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn1
             // 
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(247, 208);
+            this.btn1.BackColor = System.Drawing.Color.Transparent;
+            this.btn1.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn1.Location = new System.Drawing.Point(266, 234);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(69, 34);
+            this.btn1.Size = new System.Drawing.Size(69, 62);
             this.btn1.TabIndex = 18;
             this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn3
             // 
-            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(430, 206);
+            this.btn3.BackColor = System.Drawing.Color.Transparent;
+            this.btn3.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn3.Location = new System.Drawing.Point(416, 234);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(69, 36);
+            this.btn3.Size = new System.Drawing.Size(69, 62);
             this.btn3.TabIndex = 17;
             this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn8
             // 
-            this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(341, 330);
+            this.btn8.BackColor = System.Drawing.Color.Transparent;
+            this.btn8.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn8.Location = new System.Drawing.Point(341, 368);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(69, 34);
+            this.btn8.Size = new System.Drawing.Size(69, 57);
             this.btn8.TabIndex = 16;
             this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn2
             // 
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(341, 206);
+            this.btn2.BackColor = System.Drawing.Color.Transparent;
+            this.btn2.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn2.Location = new System.Drawing.Point(341, 234);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(69, 35);
+            this.btn2.Size = new System.Drawing.Size(69, 62);
             this.btn2.TabIndex = 15;
             this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn4
             // 
-            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(247, 269);
+            this.btn4.BackColor = System.Drawing.Color.Transparent;
+            this.btn4.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn4.Location = new System.Drawing.Point(266, 300);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(69, 34);
+            this.btn4.Size = new System.Drawing.Size(69, 62);
             this.btn4.TabIndex = 14;
             this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn9
             // 
-            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(430, 330);
+            this.btn9.BackColor = System.Drawing.Color.Transparent;
+            this.btn9.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.ForeColor = System.Drawing.Color.MediumBlue;
+            this.btn9.Location = new System.Drawing.Point(416, 368);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(69, 34);
+            this.btn9.Size = new System.Drawing.Size(69, 57);
             this.btn9.TabIndex = 13;
             this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // txtRest
             // 
             this.txtRest.Enabled = false;
             this.txtRest.Font = new System.Drawing.Font("Verdana", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRest.Location = new System.Drawing.Point(247, 143);
+            this.txtRest.Location = new System.Drawing.Point(266, 166);
             this.txtRest.Name = "txtRest";
-            this.txtRest.Size = new System.Drawing.Size(289, 61);
+            this.txtRest.Size = new System.Drawing.Size(256, 61);
             this.txtRest.TabIndex = 12;
             // 
             // txtValor
             // 
             this.txtValor.Enabled = false;
             this.txtValor.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValor.Location = new System.Drawing.Point(248, 115);
+            this.txtValor.Location = new System.Drawing.Point(266, 137);
             this.txtValor.MaxLength = 7;
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(288, 23);
+            this.txtValor.Size = new System.Drawing.Size(256, 23);
             this.txtValor.TabIndex = 11;
             this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -753,7 +801,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 617);
+            this.ClientSize = new System.Drawing.Size(955, 617);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
