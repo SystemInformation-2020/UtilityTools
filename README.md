@@ -10,13 +10,11 @@
 
 ##### Developed By: First Semester SI - Group 1
 
-<p align="right> -Gabriel M. </p>
-
+#### -Gabriel M.
 
 ------------
 
 ## Requirements
-
 
 
 ```sh
